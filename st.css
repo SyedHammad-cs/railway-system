@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:   #045e99;
+}
+header{
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #064c7c;
+    padding: 1vw;
+    font-size: 1.5vw;
+    color: #026fc1;
+    font-weight: bold;
+    /* z-index: 1000; */
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 2vw;
+}
+a{
+    text-decoration: none;
+    color:#E4c9B0;
+}
+
+.btn{
+    background-color: rgba(255, 255, 255);
+    border: none;
+    border-radius: 1.75vw;
+    padding: .6vw;
+    margin: 0 1.5vw;
+    font-size: 0.95vw;
+}
+.btn a{
+    color:  #163f53;
+    font-weight:bold;
+}
+.box{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 80%;
+    padding: 0 25vw;
+    padding-top: 30vw;
+    padding-bottom: 20vw;
+    overflow: hidden;
+    font-family:monospace;
+}
+.box h1,.box h3,.box button{
+    position: relative;
+    top: -9vw;
+    margin: 1vw;
+    font-weight: bolder;
+}
+.box h1{
+    font-size: 3vw;
+}
+.box h3{
+    font-size: 1.5vw;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-image: url('darjeeling.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: blur(2px);
+    z-index: -1;
+}
+.book{
+    border: none;
+    border-radius: 1vw;
+    background: rgba(234, 227, 227, 0.3);
+    font-weight: bolder;
+    color: black;
+    padding: .75vw;
+    font-size: 17px;
+}
+hr{
+    border: 0;
+    background: white;
+    height: 0.1vw;
+    margin-top: -8vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 1.5vw;
+}
+#line2{
+    margin: 3vw 3vw;
+}
+
+.container {
+    display: flex;
+    justify-content: start;
+    overflow: hidden;
+    width: 100%;
+    height: 30vw;
+    position: relative;
+    padding: 0 1vw;
+}
+
+.slideshow {
+    display: flex;
+    width: 400vw; /* 4 slides of 70vw each */
+    animation: slideAnimation 16s infinite;
+}
+
+.slide {
+    display: flex;
+    justify-content: start;
+    width: 100vw;
+    height: 35vw;
+}
+
+.slide img {
+    height: 100%;
+    width: 60%;
+    object-fit:contain;
+}
+
+@keyframes slideAnimation {
+    0%, 20% {
+        transform: translateX(0);
+    }
+    25%, 45% {
+        transform: translateX(-100vw); /* Moves to the next slide */
+    }
+    50%, 70% {
+        transform: translateX(-200vw); /* Moves to the third slide */
+    }
+    75%, 95% {
+        transform: translateX(-300vw); /* Moves to the fourth slide */
+    }
+    100% {
+        transform: translateX(0); /* Back to the first slide */
+    }
+}
+.s1,.s2,.s3,.s4{
+    text-align: end;
+    color: #bec1b0;
+    font-size: 4vw;
+    text-align: center;
+    margin: 10vw 2vw;
+ }
+ .destinations {
+    text-align: center;
+ }
+ .head2{
+    font-size: 4vw;
+    padding: 2vw;
+ }
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding:0 1vw;
+        padding-bottom: 4vw;
+        margin-top: 0vw;
+        align-items: center;
+        color: white;
+    }
+
+.left{
+    width:50%;
+    height: auto;
+    text-align:justify;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+.right{
+    width:50%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+}
+.right img{
+    max-width: 100%;
+    height: auto;
+}
+.head3{
+    text-align: center;
+    font-size: 4vw;
+    padding: 0vw;
+    padding-top: 1vw;
+}
+.para1{
+    font-size: 2vw;
+    font-weight: bold;
+    color: black;
+}
+.para2{
+    font-size: 1.5vw;
+}
+.left ul li{
+    list-style: none;
+}
+footer{
+    font-size: 01.5vw;
+    text-align: center;
+    background-color: rgb(230, 224, 224);
+    color: #163f53;
+    padding: 1.5vw 0;
+}
+
+.RRS{
+    font-size: 2vw;
+    color: white;
+}
+
+form{
+    margin: 2vw 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+
+input{
+    border: 2px solid #163f53;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    width: 40%;
+    margin:  1.5vw 0 ;
+    padding: 7px;
+    background-color: rgb(202, 185, 185,0.3); 
+}
+input::placeholder{
+    color: black;
+}
+.buttons button{
+    margin: 0 2vw;
+    border: none;
+    border-radius: 1.7vw;
+    background: rgb(202, 185, 185,0.3);
+    font-weight: bold;
+    color: #0b2938;
+    padding: 1vw;
+}
+
+
+.details h1{
+    text-align: center;
+    margin-top: 1vw;
+    color: rgba(255, 255, 255);
+    font-weight: bold;
+}
+
+.details {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    margin-bottom: 5vw;
+    color: black;
+    text-align: center;
+    padding: 5vw;
+    padding-top: 8vw;
+    padding-bottom: 7vw;
+    /* background-color: black;  */
+    font-weight: bolder;
+}
+
+.details::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-image: url('darjeeling.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: blur(2px);
+    z-index: -1;
+}
